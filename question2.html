@@ -26,6 +26,40 @@
       */
 
       // onclick انتبه إنه إحنا مو قاعدين نستخدم زر يعني ما نقدر نستخدم
+
+        let drivers = [
+          {name: "hamad" , age: "24" },
+          {name: "mohammed" , age: "20"},
+          {name: "mona" , age: "16"},
+         
+
+    ]
+
+   function LicenseTest(age){
+     for (let index = 0; index <drivers.length;  index++) {
+       const element = drivers[index];
+                
+
+               if (element.age>18) {
+                    console.log("take your license " + element.name)
+          
+               }
+                else {
+                  console.log("Sorry!" + element.name)
+
+                }
+       
+     }
+      
+    
+
+  
+
+
+    }
+
+    LicenseTest()
+
     </script>
   </body>
 </html>
